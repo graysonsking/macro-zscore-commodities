@@ -1,0 +1,25 @@
+# Macro series and their transforms. Edit here rather than in code so the
+# configuration used for a published result is version controlled.
+
+series:
+  INDPRO:    {factor: growth,     transform: yoy,   lag_months: 1}
+  PAYEMS:    {factor: growth,     transform: yoy,   lag_months: 1}
+  DGORDER:   {factor: growth,     transform: yoy,   lag_months: 2}
+  CPIAUCSL:  {factor: inflation,  transform: yoy,   lag_months: 1}
+  PPIACO:    {factor: inflation,  transform: yoy,   lag_months: 1}
+  T10YIE:    {factor: inflation,  transform: level, lag_months: 0}
+  DFII10:    {factor: real_rates, transform: level, lag_months: 0}
+  DTWEXBGS:  {factor: dollar,     transform: yoy,   lag_months: 0}
+
+zscore:
+  window: 60
+  min_periods: 30
+  winsorize_limit: 3.0
+
+portfolio:
+  rebalance: M
+  long_quantile: 0.33
+  short_quantile: 0.33
+  target_vol: 0.10
+  max_leverage: 2.0
+  cost_bps: 15
