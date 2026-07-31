@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30569254/README.md)
 # Macro Z-Score Commodities
 
 A cross-sectional commodity signal built from standardized macroeconomic indicators. Each commodity is scored against the macro environment it is most sensitive to, and positions are taken on the resulting ranking.
