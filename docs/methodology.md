@@ -1,4 +1,3 @@
-[methodology.md](https://github.com/user-attachments/files/30567692/methodology.md)
 # Methodology
 
 ## Idea
